@@ -190,7 +190,8 @@ template:
   spec:
     containers:
       - name: runner
-        image: ghcr.io/actions/actions-runner:latest
+#        image: ghcr.io/actions/actions-runner:latest
+        image: testacr12344.azurecr.io/arc-runner/actions-runner
         command: ["/home/runner/run.sh"]
 
 ## Optional controller service account that needs to have required Role and RoleBinding
